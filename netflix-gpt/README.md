@@ -1,8 +1,11 @@
 - Create react app
 - Configured Tailwind css into our app
 - Header
+- Routing of app
 - Build Login Form
--Sign up form
+- Sign up form
+- Form Validation
+- useRef hook
 
 
 - Feature We Build
