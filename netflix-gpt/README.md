@@ -6,6 +6,7 @@
 - Sign up form
 - Form Validation
 - useRef hook
+- use firebase for authentication
 
 
 - Feature We Build
@@ -23,4 +24,16 @@
   - Netfix gpt
     - Seach bar
     - Movie suggestions
+
+
+- Deplyment to firebase
+1. npm install -g firebase-tools
+2. firebase login
+3. firebase init
+4. i am doing manually deployment from local
+5. I choose this option -  Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+6. just select option for you want to select existiing project and hit enter
+7. npm run build
+8. Follow this url: https://firebase.google.com/docs/hosting
+9. firebase deploy
 
