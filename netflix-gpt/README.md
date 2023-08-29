@@ -1,5 +1,10 @@
 - Create react app
 - Configured Tailwind css into our app
+- Header
+- Build Login Form
+-Sign up form
+
+
 - Feature We Build
     - Login/Sign up
       - sign in /Sign up form
@@ -15,4 +20,4 @@
   - Netfix gpt
     - Seach bar
     - Movie suggestions
-    
+
