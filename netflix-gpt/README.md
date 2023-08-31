@@ -17,6 +17,16 @@
 - updated profile api call
 - navigation
 - build fetch movies from TMDB
+- resolved bug issue for navigation when user is not signed and able to go to browse page 
+- resolved bug fix for user display name and profile picture upadte
+- if user is not logged redirect to login page
+- when my header component unloads/unmounts it will unsubscribe this event, is we are not doing this then when every time header components loading this use effect call -- Unsubscribed to onauthStatusChanged() callback.
+
+- Add harcoded values to the constant files
+- register for TMBD API and create new app and get access token
+- Make get data from TMBD Now playing list api
+- store NowPlaying Movies to store
+
 
 
 

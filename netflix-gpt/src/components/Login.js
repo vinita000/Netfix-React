@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import Header from "./Header";
+import { PHOTO_URL } from "./utils/constants";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -18,7 +18,6 @@ const Login = () => {
   const email = useRef(null);
   const password = useRef(null);
   const name = useRef(null);
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleSignToggle = () => {
@@ -47,8 +46,7 @@ const Login = () => {
           //Update profile
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL:
-              "https://lh3.googleusercontent.com/ogw/AGvuzYaZIIxfjjihLqVOBmzWJ0iyC8_TPVQkSw1fxXA4=s64-c-mo",
+            photoURL: PHOTO_URL ,
           })
             .then(() => {
               const { uid, email, displayName, photoURL } = auth.currentUser; // get updated value from user that why use this instead of use user
@@ -60,7 +58,6 @@ const Login = () => {
                   photoURL: photoURL,
                 })
               );
-              navigate("/browse");
             })
             .catch((error) => {
               const errorCode = error.code;
@@ -84,7 +81,6 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           console.log(user);
-          navigate("/browse");
         })
         .catch((error) => {
           const errorCode = error.code;
