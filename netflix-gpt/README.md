@@ -7,6 +7,19 @@
 - Form Validation
 - useRef hook
 - use firebase for authentication
+- firebase setup
+- deploying our app to production
+- create sigin up user Account in fire base
+- implement sign in user api
+- created redux store with user slice to keep user data
+- implemented sign out featue
+- added photo name
+- updated profile api call
+- navigation
+- build fetch movies from TMDB
+
+
+
 
 
 - Feature We Build
@@ -37,3 +50,6 @@
 8. Follow this url: https://firebase.google.com/docs/hosting
 9. firebase deploy
 
+
+npm install -D @reduxjs/toolkit
+npm install react-redux
