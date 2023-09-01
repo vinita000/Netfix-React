@@ -7,10 +7,11 @@ const MainContainer = () => {
   const movies = useSelector(store=>store.movies?.nowPlayingMovies);
   if(!movies) return; //Early return
 
-  const randomId = Math.floor(Math.random() * movies.length);
-  const mainMovies = movies[randomId];
+  // const randomId = Math.floor(Math.random() * movies.length);
+  // const mainMovies = movies[randomId];
   // console.log("mainMovies", mainMovies);
   // console.log("id", mainMovies.id);
+  const mainMovies = movies[1]
   const { original_title, overview, id } = mainMovies
   return (
     <div>

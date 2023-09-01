@@ -36,6 +36,7 @@
 -  embedded the you tube video
 - make it autoplay and mute
 - tailwind class to make main container look awsome
+- Build secondary component
 
 
 

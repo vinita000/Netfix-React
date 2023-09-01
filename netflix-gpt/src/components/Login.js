@@ -25,8 +25,8 @@ const Login = () => {
   };
 
   const handleSubmiForm = () => {
-    console.log(email.current.value);
-    console.log(password.current.value);
+    // console.log(email.current.value);
+    // console.log(password.current.value);
     const message = checkValidData(email.current.value, password.current.value); // Check Validation here
     setErrorMessage(message);
     if (message) return;
@@ -42,7 +42,7 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          console.log(user);
+          // console.log(user);
           //Update profile
           updateProfile(user, {
             displayName: name.current.value,
@@ -80,7 +80,7 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          console.log(user);
+          // console.log(user);
         })
         .catch((error) => {
           const errorCode = error.code;
