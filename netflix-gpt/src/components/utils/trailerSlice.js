@@ -1,22 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const moviesSlice = createSlice({
-    name: 'movies',
+const trailerSlice = createSlice({
+    name: 'trailer',
     initialState: {
-      nowPlayingMovies: null,
-      trailerVideo: null
+      nowPlayingMovies: null
     },
     reducers: {
       addNowPlayingMovies: (state, action) => {
         state.nowPlayingMovies = action.payload;
-      },
-      addTrailerVideo: (state, action) => {
-        state.trailerVideo = action.payload;
       }
     }
 })
 
-export const { addNowPlayingMovies, addTrailerVideo } = moviesSlice.actions;
-export default moviesSlice.reducer
+export const { addNowPlayingMovies } = trailerSlice.actions;
+export default trailerSlice.reducer
 
 //here my objective is when user sing in/sign up jsut add that user to redux store and when user sign out remove user from store

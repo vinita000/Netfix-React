@@ -54,7 +54,7 @@ const Header = () => {
           {/* Flex container for user details */}
           <div className="flex flex-col items-center mt-4">
             <img className="w-12 h-12" alt="user-icon" src={user?.photoURL} />
-            <p className="mt-2 font-bold italic">({user?.displayName})</p>{" "}
+            <p className="mt-2 font-bold">({user?.displayName})</p>{" "}
             {/* Add margin-top */}
           </div>
           <button className="px-2 mx-2 font-bold" onClick={handleSignOut}>

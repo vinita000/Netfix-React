@@ -26,6 +26,17 @@
 - register for TMBD API and create new app and get access token
 - Make get data from TMBD Now playing list api
 - store NowPlaying Movies to store
+- custom hook for now playing movies
+- updated store with movies data
+- create movie slice
+- planning for main container and seconday container
+- fetch data for triler video
+- custom hook for trailer video
+- update store with trailer video data
+-  embedded the you tube video
+- make it autoplay and mute
+- tailwind class to make main container look awsome
+
 
 
 
