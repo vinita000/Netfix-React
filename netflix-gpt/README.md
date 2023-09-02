@@ -37,7 +37,15 @@
 - make it autoplay and mute
 - tailwind class to make main container look awsome
 - Build secondary component
-
+- Movie list built
+- Movie card build 
+- Found out TMDB cdn url
+- Made browse page good with tailwind css
+- i create use popular movies, top rated movies, upcoming movies custom hooks
+- Add gpt search feature
+- gpt search bar
+- added mutli language feature in our ***
+- Integrate gpt Api's()
 
 
 
