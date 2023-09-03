@@ -46,6 +46,8 @@
 - gpt search bar
 - added mutli language feature in our ***
 - Integrate gpt Api's()
+- set aopen ai API key
+- install openai package
 
 
 

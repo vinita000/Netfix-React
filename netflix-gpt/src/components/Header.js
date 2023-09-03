@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "./utils/userSlice";
 import { LOGO } from "./utils/constants";
-import { toggleGptSearchView } from "./utils/gptSlice";
+import { addGptMovieResult, toggleGptSearchView } from "./utils/gptSlice";
 import { SUPPORTED_LANGUAGE } from "./utils/constants";
 import { changeLanguage } from "./utils/configSlice";
 
@@ -20,6 +20,7 @@ const Header = () => {
       .catch((error) => {
         navigate("/error");
       });
+    dispatch(addGptMovieResult({ moviesName: null, movieResults: null }))
   };
 
   useEffect(() => {
@@ -47,6 +48,7 @@ const Header = () => {
 
   const handleGptSearchClick = () => {
     //here we use toggle to show / hide GTP component
+    dispatch(addGptMovieResult({ moviesName: null, movieResults: null }))
     dispatch(toggleGptSearchView());
   };
 
