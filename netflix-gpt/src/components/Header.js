@@ -57,8 +57,8 @@ const Header = () => {
   }
 
   return (
-    <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
-      <img className="w-44" alt="logo" src={LOGO} />
+    <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between flex-col md:flex-row">
+      <img className="w-44 md:mx-0 mx-auto" alt="logo" src={LOGO} />
       {user && (
         <div className="flex items-center">
           {" "}
@@ -78,8 +78,8 @@ const Header = () => {
           >
             {!showGptSearch ? "GPT Search" : "Home page"}
           </button>
-          <div className="flex flex-col items-center mt-4">
-            <img className="w-12 h-12" alt="user-icon" src={user?.photoURL} />
+          <div className="flex flex-col hidden md:inline-block tems-center mt-4">
+            <img className="w-12 h-12 " alt="user-icon" src={user?.photoURL} />
             <p className="mt-2 font-bold text-white">
               ({user?.displayName})
             </p>{" "}
